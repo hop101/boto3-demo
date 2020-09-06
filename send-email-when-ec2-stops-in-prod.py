@@ -19,7 +19,7 @@ def lambda_handler(event, context):
         if tag['Key'] == 'Env' and tag['Value'] == 'Prod':
             print('This is production Server')
             snsClient.publish(
-                TopicArn='arn:aws:sns:ap-south-1:353848682332:6pmweekday',
+                TopicArn='paste your snsn topic arn here',
                 Message='Instance in Prod with Id {}, stopped'.format(instanceId),
                 Subject='Prod Alert!!!!'
             )
