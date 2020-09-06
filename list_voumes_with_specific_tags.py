@@ -23,7 +23,7 @@ for instance in instances:
 client = boto3.client('sns')
 
 client.publish(
-    TopicArn='arn:aws:sns:ap-south-1:999999999999:javahome-weekend-7AM',
+    TopicArn='paste your sns topic arn here',
     Message=str(volumeIds),
     Subject='EBS Volumes backup alert'
 )
